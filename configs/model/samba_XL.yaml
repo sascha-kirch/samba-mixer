@@ -1,0 +1,18 @@
+defaults:
+  - input_projection: local_time_global_diff_embedding
+  - backbone: samba_mixer
+  - _self_
+
+name: samba_XL
+cls_token_type: "none" # none | head | middle | tail
+
+d_model: 1024 # 768
+backbone:
+  n_layer: 12
+  d_state: 24
+  d_conv: 4
+  expand: 2
+  rms_norm: False
+  drop_path: 0.2
+head:
+  n_layer: 3

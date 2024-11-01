@@ -1,0 +1,16 @@
+defaults:
+  - trainer: base
+  - dataset: nasa_L
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+  - _self_
+
+gpu_devices: auto
+log_graph: False
+checkpoint: <PATH>
+
+
+hydra:
+  sweeper:
+    params:
+      checkpoint: <PATH1>, <PATH2>, <PATHX>

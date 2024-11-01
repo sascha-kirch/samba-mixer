@@ -1,0 +1,19 @@
+defaults:
+    - cycle_type: discharge_filtered
+
+name: pwm
+train_batteries: [25, 26, 28]
+test_batteries: [27]
+test_battery_cycle_start: {27: 0}
+resample_type_train: anchors # [linear | random | anchors]. Test data always linear.
+oversample: none # [none | x3 | x2 | max]
+dataloader_reload_period: ${get_dataloader_reload_period:${dataset.resample_type_train},${dataset.oversample}}
+num_samples_target: 20
+
+range_target_timesignals: {
+    "current_measured": {"min": 0, "max": 5},
+    "voltage_measured": {"min": 0, "max": 5},
+    "temperature_measured": {"min": 0, "max": 50},
+}
+# TODO: needs to be removed and extracted from the dataset!!
+batch_size: 32

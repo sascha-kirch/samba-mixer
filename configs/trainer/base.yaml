@@ -1,0 +1,6 @@
+defaults:
+  - optimizer: adam_w
+  - scheduler: step
+
+epochs: 60
+precission: 16 # [16 | 32 | 64 | bf16]

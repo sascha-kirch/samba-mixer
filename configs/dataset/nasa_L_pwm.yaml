@@ -1,0 +1,20 @@
+defaults:
+    - cycle_type: discharge_filtered
+
+#TODO: drop unusual cycles in PWM set!!!!
+name: nasa_L_pwm
+train_batteries: [6, 18, 25,27,28, 31, 45, 46, 48, 55, 56] # removed 34, 35, 54
+test_batteries: [5,7,47, 26, 34, 54]
+test_battery_cycle_start: {5: 0, 7: 0, 47: 0}
+resample_type_train: anchors # [linear | random | anchors]. Test data always linear.
+oversample: none # [none | x3 | x2 | max]
+dataloader_reload_period: ${get_dataloader_reload_period:${dataset.resample_type_train},${dataset.oversample}}
+num_samples_target: 128
+
+range_target_timesignals: {
+    "current_measured": {"min": 0, "max": 5},
+    "voltage_measured": {"min": 0, "max": 5},
+    "temperature_measured": {"min": 0, "max": 50},
+}
+
+batch_size: 32

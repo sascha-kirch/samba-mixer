@@ -1,0 +1,17 @@
+defaults:
+  - trainer: base
+  - dataset: nasa_L
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+  - _self_
+
+gpu_devices: auto
+log_graph: False
+checkpoint: <PATH>
+
+hydra:
+  sweeper:
+    params:
+      +dataset.test_battery_cycle_start: "{6:30, 7:30, 47:15}, {6:70, 7:70, 47:35}, {6:100, 7:100, 47:50}"
+  sweep:
+    dir: outputs/experiment/different_start_cycles/${now:%Y-%m-%d}/${now:%H-%M-%S}

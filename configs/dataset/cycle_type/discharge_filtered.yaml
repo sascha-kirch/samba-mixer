@@ -1,0 +1,15 @@
+name: discharge_filtered
+dataset_root_path: /home/dev_user/samba_mixer/datasets/nasa_batteries_preprocessed_discharge_filtered
+columns_all_timesignals:
+  - current_measured
+  - voltage_measured
+  - current_load
+  - voltage_load
+  - temperature_measured
+  - sample_time
+  - capacity_t
+columns_target_timesignals:
+  - current_measured
+  - voltage_measured
+  - temperature_measured
+  - sample_time

@@ -1,0 +1,3 @@
+name: ExponentialLR
+parameter:
+  gamma: 0.95

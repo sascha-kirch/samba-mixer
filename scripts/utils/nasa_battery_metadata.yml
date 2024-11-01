@@ -1,0 +1,463 @@
+# This file contains the information about the discharge cycle retrieved from the README.txt. Ambient Temp is stored in
+# the cycle data it self, hence not mentioned here
+B0005:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.7
+    discharge_type: constant
+    discharge_amplitude: 2.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "1. BatteryAgingARC-FY08Q4"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0006:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.5
+    discharge_type: constant
+    discharge_amplitude: 2.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "1. BatteryAgingARC-FY08Q4"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0007:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.2
+    discharge_type: constant
+    discharge_amplitude: 2.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "1. BatteryAgingARC-FY08Q4"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0018:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.5
+    discharge_type: constant
+    discharge_amplitude: 2.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "1. BatteryAgingARC-FY08Q4"
+  c0: 2.0
+  fade_in_percent: 30
+
+# NOTE: Batteries 25-28 are stored twice with the same content in the orig dataset. I only add one here
+B0025:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.0
+    discharge_type: square_wave
+    discharge_amplitude: 4.0
+    discharge_frequency: 0.05
+    discharge_dutycycle: 50
+    drop_cycles: [5, 10, 16]
+  sub_dir: "2. BatteryAgingARC_25_26_27_28_P1"
+  c0: 2.0
+  fade_in_percent: 12
+
+B0026:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.2
+    discharge_type: square_wave
+    discharge_amplitude: 4.0
+    discharge_frequency: 0.05
+    discharge_dutycycle: 50
+    drop_cycles: [5, 10, 16]
+  sub_dir: "2. BatteryAgingARC_25_26_27_28_P1"
+  c0: 2.0
+  fade_in_percent: 12
+
+B0027:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.5
+    discharge_type: square_wave
+    discharge_amplitude: 4.0
+    discharge_frequency: 0.05
+    discharge_dutycycle: 50
+    drop_cycles: [5, 10, 16]
+  sub_dir: "2. BatteryAgingARC_25_26_27_28_P1"
+  c0: 2.0
+  fade_in_percent: 12
+
+B0028:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.7
+    discharge_type: square_wave
+    discharge_amplitude: 4.0
+    discharge_frequency: 0.05
+    discharge_dutycycle: 50
+    drop_cycles: [5, 10, 16]
+  sub_dir: "2. BatteryAgingARC_25_26_27_28_P1"
+  c0: 2.0
+  fade_in_percent: 12
+
+B0029:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.0
+    discharge_type: constant
+    discharge_amplitude: 4.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 20
+
+B0030:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.2
+    discharge_type: constant
+    discharge_amplitude: 4.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 20
+
+B0031:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.5
+    discharge_type: constant
+    discharge_amplitude: 4.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 20
+
+B0032:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.7
+    discharge_type: constant
+    discharge_amplitude: 4.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 20
+
+B0033:
+  usable: False
+  discharge:
+    cutoff_voltage: 2.0
+    discharge_type: constant
+    discharge_amplitude: 4.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 20
+
+B0034:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.2
+    discharge_type: constant
+    discharge_amplitude: 4.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 20
+
+B0036:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.7
+    discharge_type: constant
+    discharge_amplitude: 2.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 20
+
+B0038:
+  # I double checked: different cycles have differenet temperatures and different constant discharge amplitudes
+  usable: False
+  discharge:
+    cutoff_voltage: 2.2
+    discharge_type: constant
+    discharge_amplitude: "1.0, 2.0, 4.0"
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 20
+
+B0039:
+  # I double checked: different cycles have differenet temperatures and different constant discharge amplitudes
+  usable: False
+  discharge:
+    cutoff_voltage: 2.5
+    discharge_type: constant
+    discharge_amplitude: "1.0, 2.0, 4.0"
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 20
+
+B0040:
+  # I double checked: different cycles have differenet temperatures and different constant discharge amplitudes
+  usable: False
+  discharge:
+    cutoff_voltage: 2.7
+    discharge_type: constant
+    discharge_amplitude: "1.0, 2.0, 4.0"
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 20
+
+# NOTE for Batteries 41-44 from the README.txt:
+# 'Note that there are several discharge runs where the capacity was very low. Reasons for this have not been fully
+# analyzed.'
+B0041:
+  # I double checked: different cycles have differenet temperatures and different constant discharge amplitudes
+  usable: False
+  discharge:
+    cutoff_voltage: 2.0
+    discharge_type: constant
+    discharge_amplitude: "1.0, 4.0"
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0042:
+  # I double checked: different cycles have differenet temperatures and different constant discharge amplitudes
+  usable: False
+  discharge:
+    cutoff_voltage: 2.2
+    discharge_type: constant
+    discharge_amplitude: "1.0, 4.0"
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0043:
+  # I double checked: different cycles have differenet temperatures and different constant discharge amplitudes
+  usable: False
+  discharge:
+    cutoff_voltage: 2.5
+    discharge_type: constant
+    discharge_amplitude: "1.0, 4.0"
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0044:
+  # I double checked: different cycles have differenet temperatures and different constant discharge amplitudes
+  usable: False
+  discharge:
+    cutoff_voltage: 2.7
+    discharge_type: constant
+    discharge_amplitude: "1.0, 4.0"
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "3. BatteryAgingARC_25-44"
+  c0: 2.0
+  fade_in_percent: 30
+
+# NOTE for Batteries 45-48 from the README.txt:
+# 'There are several discharge runs where the capacity was very low. Reasons for this have not been fully analyzed.'
+B0045:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.0
+    discharge_type: constant
+    discharge_amplitude: 1.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "4. BatteryAgingARC_45_46_47_48"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0046:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.2
+    discharge_type: constant
+    discharge_amplitude: 1.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "4. BatteryAgingARC_45_46_47_48"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0047:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.5
+    discharge_type: constant
+    discharge_amplitude: 1.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "4. BatteryAgingARC_45_46_47_48"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0048:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.7
+    discharge_type: constant
+    discharge_amplitude: 1.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "4. BatteryAgingARC_45_46_47_48"
+  c0: 2.0
+  fade_in_percent: 30
+
+# NOTE for Batteries 49-52 from the README.txt:
+# 'Note that there are several discharge runs where the capacity as well as voltage levels were very low. Reasons
+# for this have not been fully analyzed.'
+# The experiments were carried out until the experiment control software crashed.
+# B0049:
+#   discharge:
+#     cutoff_voltage: 2.0
+#     discharge_type: constant
+#     discharge_amplitude: 2.0
+#     discharge_frequency: 0.0
+#     discharge_dutycycle: 100
+# charge:
+#     constant_current: 1.5
+#     constant_current_until_voltage: 4.2
+#     constant_voltage_until_current: 0.02
+#   sub_dir: "5. BatteryAgingARC_49_50_51_52"
+
+# NOTE: Battery B0050 has an empty field for the capacity in the mat_file
+# B0050:
+#     cutoff_voltage: 2.2
+#     discharge_type: constant
+#     discharge_amplitude: 2.0
+#     discharge_frequency: 0.0
+#     discharge_dutycycle: 100
+# charge:
+#     constant_current: 1.5
+#     constant_current_until_voltage: 4.2
+#     constant_voltage_until_current: 0.02
+#     sub_dir: "5. BatteryAgingARC_49_50_51_52"
+#
+# B0051:
+#   discharge:
+#     cutoff_voltage: 2.5
+#     discharge_type: constant
+#     discharge_amplitude: 2.0
+#     discharge_frequency: 0.0
+#     discharge_dutycycle: 100
+# charge:
+#     constant_current: 1.5
+#     constant_current_until_voltage: 4.2
+#     constant_voltage_until_current: 0.02
+#   sub_dir: "5. BatteryAgingARC_49_50_51_52"
+
+# NOTE: Battery B0052 has an empty field for the capacity in the mat_file
+# B0052:
+#     cutoff_voltage: 2.7
+#     discharge_type: constant
+#     discharge_amplitude: 2.0
+#     discharge_frequency: 0.0
+#     discharge_dutycycle: 100
+# charge:
+#     constant_current: 1.5
+#     constant_current_until_voltage: 4.2
+#     constant_voltage_until_current: 0.02
+#     sub_dir: "5. BatteryAgingARC_49_50_51_52"
+#
+# NOTE for Batteries 53-56 from the README.txt:
+# 'Note that there are several discharge runs where the capacity was very low. Reasons for this have not been fully
+# analyzed.'
+B0053:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.0
+    discharge_type: constant
+    discharge_amplitude: 2.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "6. BatteryAgingARC_53_54_55_56"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0054:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.2
+    discharge_type: constant
+    discharge_amplitude: 2.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "6. BatteryAgingARC_53_54_55_56"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0055:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.5
+    discharge_type: constant
+    discharge_amplitude: 2.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "6. BatteryAgingARC_53_54_55_56"
+  c0: 2.0
+  fade_in_percent: 30
+
+B0056:
+  usable: True
+  discharge:
+    cutoff_voltage: 2.7
+    discharge_type: constant
+    discharge_amplitude: 2.0
+    discharge_frequency: 0.0
+    discharge_dutycycle: 100
+    drop_cycles: []
+  sub_dir: "6. BatteryAgingARC_53_54_55_56"
+  c0: 2.0
+  fade_in_percent: 30

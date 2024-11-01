@@ -1,0 +1,18 @@
+defaults:
+  - model: samba_L
+  - trainer: base
+  - dataset: nasa_L
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+  - _self_
+
+keep_checkpoint: True
+gpu_devices: auto
+log_graph: False
+
+hydra:
+  sweeper:
+    params:
+      dataset: nasa , nasa_M , nasa_L
+  sweep:
+    dir: outputs/experiment/data_splits/${now:%Y-%m-%d}/${now:%H-%M-%S}

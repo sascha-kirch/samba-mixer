@@ -1,0 +1,5 @@
+# https://pytorch.org/docs/stable/generated/torch.optim.lr_scheduler.StepLR.html#torch.optim.lr_scheduler.StepLR
+name: StepLR
+parameter:
+  step_size: 20
+  gamma: 0.5

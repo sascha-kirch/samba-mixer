@@ -1,0 +1,22 @@
+hydra-core == 1.3.*
+hydra_colorlog == 1.2.*
+
+# lightning == 2.1.*
+pytorch-lightning == 1.9.*
+seaborn == 0.13.*
+timm == 1.0.*
+plotly == 5.22.*
+tensorboard==2.14.*
+
+# Dev Requirements
+setuptools==69.2.*
+build>=0.10.0
+twine>=4.0.0
+
+# Testing
+pytest>=7.3.1
+pytest-mock>=3.12.0
+
+# Linting/Tooling
+mypy>=1.3.0
+ruff>=0.0.270

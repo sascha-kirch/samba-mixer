@@ -1,0 +1,19 @@
+defaults:
+    - cycle_type: discharge_filtered
+
+name: nasa_M
+train_batteries: [5, 18, 45, 46, 48]
+test_batteries: [6,7,47]
+test_battery_cycle_start: {6: 0, 7: 0, 47: 0}
+resample_type_train: anchors # [linear | random | anchors]. Test data always linear.
+oversample: none # [none | x3 | x2 | max]
+dataloader_reload_period: ${get_dataloader_reload_period:${dataset.resample_type_train},${dataset.oversample}}
+num_samples_target: 128
+
+range_target_timesignals: {
+    "current_measured": {"min": 0, "max": 5},
+    "voltage_measured": {"min": 0, "max": 5},
+    "temperature_measured": {"min": 0, "max": 50},
+}
+
+batch_size: 32

@@ -1,0 +1,7 @@
+name: Adam
+parameter:
+  lr: 1e-4 # in Video mamba they scale the learning rate by base_lr * batch_size/256.
+  weight_decay: 0.0
+  betas:
+    - 0.9
+    - 0.999

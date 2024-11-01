@@ -1,0 +1,143 @@
+[build-system]
+requires = [
+    "setuptools",
+    "setuptools-scm",
+]
+build-backend = "setuptools.build_meta"
+
+# https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
+
+[project]
+name = "samba_mixer"
+authors = [
+    {name = "Sascha Kirch", email = "skirch1@alumno.uned.es"},
+    {name = "José Ignacio Olalde-Verano", email = "jolalde5@alumno.uned.es"},
+]
+requires-python = ">=3.8"
+dynamic = ["version","dependencies"]
+
+[tool.setuptools]
+packages = ["samba_mixer"]
+
+[tool.setuptools.dynamic]
+version = {attr = "samba_mixer.__version__"}
+dependencies = {file = ["./environment/requirements.txt"]}
+
+######## Tools
+
+# Static type checker
+# configs: https://mypy.readthedocs.io/en/stable/config_file.html
+[tool.mypy]
+# Platform configuration
+python_version = "3.8"
+# imports related
+ignore_missing_imports = true
+follow_imports = "silent"
+# None and Optional handling
+no_implicit_optional = true
+strict_optional = false
+# Configuring warnings
+warn_unused_configs = true
+warn_redundant_casts = true
+warn_unused_ignores = true
+warn_no_return = true
+warn_unreachable = true
+warn_return_any = false
+# Untyped definitions and calls
+check_untyped_defs = true
+disallow_untyped_calls = false
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+disallow_untyped_decorators = true
+# Disallow dynamic typing
+disallow_subclassing_any = false
+disallow_any_unimported = false
+disallow_any_expr = false
+disallow_any_decorated = false
+disallow_any_explicit = false
+disallow_any_generics = false
+# Miscellaneous strictness flags
+allow_untyped_globals = false
+allow_redefinition = false
+local_partial_types = false
+implicit_reexport = true
+strict_equality = true
+# Configuring error messages
+show_error_context = true
+show_column_numbers = true
+show_error_codes = true
+exclude = ["third_party_packages"]
+
+# https://docs.astral.sh/ruff/
+# https://docs.astral.sh/ruff/settings/#explicit-preview-rules
+# https://docs.astral.sh/ruff/rules/
+[tool.ruff]
+target-version = "py38"
+select = [
+    "F", # pylfakes
+    "E", # Error
+    "I", # Isort
+    "D", # pydocstyle
+    "PL", # Pylint
+    "N" # Pep8 - Naming
+    ]
+extend-select = ["W", "C90", "YTT", "ANN", "ASYNC", "A", "C4", "RET", "SIM", "PLC", "PLE", "PLR", "PLW", "FLY", "PERF", "RUF","ARG","ERA","TRY","NPY","FURB", "B","PYI","PT","Q","RET", "ICN","FIX","SLF","PIE","FBT","BLE","S","TCH"]
+ignore = ["E402","E501", "B905", "SIM300", "PD901","ANN101","FBT001","FBT002","D100", "ANN401"]
+fixable = ["W", "C90", "YTT", "ANN", "ASYNC", "A", "C4", "RET", "PLC", "PLE", "PLR", "PLW", "FLY", "PERF", "RUF", "F401", "D205", "D403", "D200", "D202", "D209","I001","E711","Q","Q002","PT"]
+unfixable = ["SIM"]
+line-length = 120
+extend-exclude = ["tests","test","third_party_packages","__init__.py","selective_scan_interface.py"]
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.isort]
+force-single-line = true
+force-sort-within-sections = false
+lines-after-imports = 2
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+known-third-party = [
+    "numpy",
+    "pandas",
+    "keras",
+    "tensorflow",
+    "sklearn",
+    "matplotlib",
+    "scipy",
+    "tqdm"
+]
+known-first-party = []
+known-local-folder = []
+
+[tool.ruff.mccabe]
+max-complexity = 8
+
+[tool.ruff.pycodestyle]
+ignore-overlong-task-comments = true
+
+[tool.ruff.pydocstyle]
+convention = "google"
+
+[tool.ruff.flake8-annotations]
+allow-star-arg-any = true
+ignore-fully-untyped = false
+mypy-init-return = true
+
+[tool.ruff.pylint]
+max-branches = 8
+max-returns = 3
+max-statements = 30
+max-args = 10
+allow-magic-value-types = ["str", "bytes", "complex", "float", "int"]
+
+[tool.ruff.pep8-naming]
+ignore-names = ["xxx"]
+
+[tool.ruff.flake8-pytest-style]
+fixture-parentheses = true
+mark-parentheses = true
+parametrize-names-type = "tuple"
+parametrize-values-row-type = "tuple"
+parametrize-values-type = "list"
+
+[tool.ruff.format]
+skip-magic-trailing-comma = false
+quote-style = "double"

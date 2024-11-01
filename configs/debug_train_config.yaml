@@ -1,0 +1,11 @@
+defaults:
+  - model: samba_S
+  - trainer: debug
+  - dataset: debug
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+  - _self_
+
+keep_checkpoint: True
+gpu_devices: auto
+log_graph: False
