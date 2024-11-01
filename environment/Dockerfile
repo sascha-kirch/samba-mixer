@@ -5,7 +5,7 @@ FROM nvcr.io/nvidia/pytorch:22.04-py3
 ARG USER_ID=1000
 ARG GROUP_ID=1000
 ARG USER_NAME=dev_user
-ARG REPO_NAME=samba_mixer
+ARG REPO_NAME=samba-mixer
 
 ENV CUDA_HOME=/usr/local/cuda
 

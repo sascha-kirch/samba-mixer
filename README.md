@@ -8,8 +8,8 @@
 Oficial code base of our paper: **[SambaMixer: State of Health Prediction of Li-ion Batteries using Mamba State Space Models]( )**.
 
 ## :bulb: Contribution
-1) Introducing **Mamba state space models** to the problem of **Li-Ion battery SOH prediction**. 
-2) Using an **anchor-based resampling** scheme to resample time signals to have the same number of samples while serving as a data augmentation method. 
+1) Introducing **Mamba state space models** to the problem of **Li-Ion battery SOH prediction**.
+2) Using an **anchor-based resampling** scheme to resample time signals to have the same number of samples while serving as a data augmentation method.
 3) Applying a **sample time-based positional encoding** scheme to the input sequence to tackle sample jitter, time signals of varying length and recuperation effects of Li-ion batteries.
 
 ## :fire: News
@@ -27,7 +27,7 @@ Oficial code base of our paper: **[SambaMixer: State of Health Prediction of Li-
     <td> <img src="media/soh_prediction_bat6.png"  alt="soh_prediction_bat6" width = 100% ></td>
     <td><img src="media/soh_prediction_bat7.png" alt="soh_prediction_bat7" width = 100%></td>
     <td><img src="media/soh_prediction_bat47.png" alt="soh_prediction_bat47" width = 100%></td>
-   </tr> 
+   </tr>
 </table>
 
 | Battery           |  Model                | MAE   | RMSE  | MAPE  |
@@ -49,12 +49,12 @@ Then build an image from the docker file.
 `--build-arg HTTP_PROXY`, `--build-arg USER_ID=$UID` and `--build-arg GROUP_ID=<YOUR_GROUPID>`
 
 ```bash
-docker build -t samba_mixer -f Dockerfile .
+docker build -t samba-mixer -f Dockerfile .
 ```
 
 Create a container from the image.
 ```bash
-docker container create --gpus all --name samba_mixer --network=host --mount=type=tmpfs,target=/dev/shm -v ~/git/sascha-kirch/samba_mixer:/home/dev_user/samba_mixer -it samba_mixer:latest
+docker container create --gpus all --name samba-mixer --network=host --mount=type=tmpfs,target=/dev/shm -v ~/git/sascha-kirch/samba-mixer:/home/dev_user/samba-mixer -it samba-mixer:latest
 ```
 > Note that `--gpus` might be set to `1` to not block all existing GPUs in a shared environment and that the port mapping might be used already, so you must specify another port.
 
@@ -63,7 +63,7 @@ docker container create --gpus all --name samba_mixer --network=host --mount=typ
 
 To start the container in an interactive bash:
 ```bash
-docker container start -i samba_mixer
+docker container start -i samba-mixer
 ```
 Or you can connect to the container via attaching VS Code to it.
 
