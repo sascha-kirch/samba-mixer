@@ -74,7 +74,7 @@ python -m pip install -e .
 
 ### Step 3: Install the Mamba Package **inside the docker**
 ```bash
-cd third_party_packages/mamba
+cd ./third_party_packages/mamba
 python -m pip install -e .
 cd ..
 ```
@@ -82,7 +82,7 @@ cd ..
 
 ### Step 4: Install the causal-conv-1d Package **inside the docker**
 ```bash
-cd third_party_packages/causal-conv1d-1.2.2
+cd ./third_party_packages/causal-conv1d-1.2.2
 python -m pip install -e .
 cd ..
 ```
@@ -96,7 +96,8 @@ Only needs to be done once during the initial setup of this repo.
 mkdir datasets
 cd ./datasets
 wget https://phm-datasets.s3.amazonaws.com/NASA/5.+Battery+Data+Set.zip
-unzip "5.+Battery+Data+Set.zip" -d nasa_batteries_orig
+unzip "5.+Battery+Data+Set.zip"
+mv "5. Battery Data Set"/ nasa_batteries_orig
 cd ./nasa_batteries_orig
 unzip "1. BatteryAgingARC-FY08Q4.zip" -d "1. BatteryAgingARC-FY08Q4"
 unzip "2. BatteryAgingARC_25_26_27_28_P1.zip" -d "2. BatteryAgingARC_25_26_27_28_P1"
@@ -105,8 +106,10 @@ unzip "4. BatteryAgingARC_45_46_47_48.zip" -d "4. BatteryAgingARC_45_46_47_48"
 unzip "5. BatteryAgingARC_49_50_51_52.zip" -d "5. BatteryAgingARC_49_50_51_52"
 unzip "6. BatteryAgingARC_53_54_55_56.zip" -d "6. BatteryAgingARC_53_54_55_56"
 cd ..
-rm -rf "*.zip"
+rm -rfv **/*.zip
 ```
+> if wgeet fails, retry and add oprion ` --no-check-certificate` to the wget comand
+
 > Note: in case those unzip commands do not work or you end up with a different file tree you need to endup with the following file tree
 ```
 |-- samba_mixer
@@ -123,7 +126,7 @@ rm -rf "*.zip"
 
 ### Step 2: preprocess to obtain dataset as needed by samba
 ```bash
-cd <REPO>/scripts/utils
+cd ./scripts/utils
 # Get unfiltered datasets
 python convert_nasa_dataset_discharge.py
 
