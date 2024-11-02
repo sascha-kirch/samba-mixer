@@ -1,5 +1,5 @@
 name: discharge
-dataset_root_path: /home/dev_user/samba_mixer/datasets/nasa_batteries_preprocessed_discharge
+dataset_root_path: /home/dev_user/samba-mixer/datasets/nasa_batteries_preprocessed_discharge
 columns_all_timesignals:
   - current_measured
   - voltage_measured

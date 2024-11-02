@@ -69,7 +69,7 @@ def main(cfg: DictConfig) -> None:
         accelerator="gpu",
         devices=cfg.gpu_devices,
         precision=cfg.trainer.precission,
-        # resume_from_checkpoint="/home/dev_user/samba_mixer/multirun/06-18-05/0/checkpoints/best-checkpoint.ckpt"
+        # resume_from_checkpoint="/home/dev_user/samba-mixer/multirun/06-18-05/0/checkpoints/best-checkpoint.ckpt"
     )
 
     trainer.fit(model, data_module)
