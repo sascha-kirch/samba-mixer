@@ -25,8 +25,8 @@ parser.add_argument("-p","--pad", action="store_true", help="Pads the time serie
 args = parser.parse_args()
 # fmt: on
 
-DATASET_BASE_PATH: Path = Path("/home/dev_user/samba_mixer/datasets/nasa_batteries_orig")
-path_str = "/home/dev_user/samba_mixer/datasets/nasa_batteries_preprocessed_discharge"
+DATASET_BASE_PATH: Path = Path("/home/dev_user/samba-mixer/datasets/nasa_batteries_orig")
+path_str = "/home/dev_user/samba-mixer/datasets/nasa_batteries_preprocessed_discharge"
 if args.filter:
     path_str += "_filtered"
 if args.pad:
@@ -248,7 +248,7 @@ if __name__ == "__main__":
     global_data: List[pd.DataFrame] = []
 
     # Note that the meta data dict is only to iterate through the data and is not the final format of the file for the dataset
-    with open("/home/dev_user/samba_mixer/scripts/utils/nasa_battery_metadata.yml", "r") as yaml_file:
+    with open("/home/dev_user/samba-mixer/scripts/utils/nasa_battery_metadata.yml", "r") as yaml_file:
         batteries = yaml.safe_load(yaml_file)
 
     for battery_id, battery_meta_data in tqdm(batteries.items(), desc="Process batteries.", colour="red"):
