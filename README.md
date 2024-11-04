@@ -3,9 +3,9 @@
 **Authors:** <br>
 [Sascha Kirch](https://sascha-kirch.github.io/), [José Ignacio Olalde-Verano](https://orcid.org/0000-0001-8058-156X) , [Sergio Martín](https://orcid.org/0000-0002-4118-0234) & [Clara Pérez-Molina](https://orcid.org/0000-0001-8260-4155)
 
-[[`Paper`]( )] [[`BibTex`](#black_nib-citation)]
+[[`Paper`](https://arxiv.org/abs/2411.00233)] [[`BibTex`](#black_nib-citation)]
 
-Oficial code base of our paper: **[SambaMixer: State of Health Prediction of Li-ion Batteries using Mamba State Space Models]( )**.
+Oficial code base of our paper: **[SambaMixer: State of Health Prediction of Li-ion Batteries using Mamba State Space Models](https://arxiv.org/abs/2411.00233)**.
 
 ## :bulb: Contribution
 1) Introducing **Mamba state space models** to the problem of **Li-Ion battery SOH prediction**.
@@ -14,7 +14,7 @@ Oficial code base of our paper: **[SambaMixer: State of Health Prediction of Li-
 
 ## :fire: News
 - **`2024/11/04`**: Code is available Now!
-- **`2024/11/04`**: We release our [pre-print]( ) on arxiv.
+- **`2024/11/04`**: We release our [pre-print](https://arxiv.org/abs/2411.00233) on arxiv.
 
 ## :star: Framework
 <img src="media/architecture.png" alt="SambaMixer Architecture" width="800%">
@@ -177,16 +177,14 @@ You can delete the build files of `./third_party_packages/mamba/build` and `./th
 If you find our work helpful for your research, please consider citing the following BibTeX entry.
 
 ```bibtex
-@article{kirch_rgb-d-fusion_2023,
- title = {RGB-D-Fusion: Image Conditioned Depth Diffusion of Humanoid Subjects},
- author = {Kirch, Sascha and Olyunina, Valeria and Ondřej, Jan and Pagés, Rafael and Martín, Sergio and Pérez-Molina, Clara},
- journal = {IEEE Access},
- year = {2023},
- volume = {11},
- issn = {2169-3536},
- doi = {10.1109/ACCESS.2023.3312017},
- pages = {99111--99129},
- url = {https://ieeexplore.ieee.org/document/10239167},
+@misc{olalde_kirch_2024_sambamixer,
+      title={SambaMixer: State of Health Prediction of Li-ion Batteries using Mamba State Space Models},
+      author={José Ignacio Olalde-Verano and Sascha Kirch and Clara Pérez-Molina and Sergio Martin},
+      year={2024},
+      eprint={2411.00233},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2411.00233},
 }
 
 ```
