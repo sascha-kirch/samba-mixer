@@ -3,7 +3,9 @@
 **Authors:** <br>
 [Sascha Kirch](https://sascha-kirch.github.io/), [José Ignacio Olalde-Verano](https://orcid.org/0000-0001-8058-156X) , [Sergio Martín](https://orcid.org/0000-0002-4118-0234) & [Clara Pérez-Molina](https://orcid.org/0000-0001-8260-4155)
 
-[[`Paper`](https://arxiv.org/abs/2411.00233)] [[`BibTex`](#black_nib-citation)]
+[![arXiv](https://img.shields.io/badge/arXiv-2411.00233-b31b1b.svg)](https://arxiv.org/abs/2411.00233) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/sambamixer-state-of-health-prediction-of-li/li-ion-state-of-health-estimation-on-nasa-li)](https://paperswithcode.com/sota/li-ion-state-of-health-estimation-on-nasa-li?p=sambamixer-state-of-health-prediction-of-li) 
+
+[[`BibTex`](#black_nib-citation)]
 
 Oficial code base of our paper: **[SambaMixer: State of Health Prediction of Li-ion Batteries using Mamba State Space Models](https://arxiv.org/abs/2411.00233)**.
 
