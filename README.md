@@ -14,6 +14,18 @@ Oficial code base of our paper: **[SambaMixer: State of Health Prediction of Li-
 2) Using an **anchor-based resampling** scheme to resample time signals to have the same number of samples while serving as a data augmentation method.
 3) Applying a **sample time-based positional encoding** scheme to the input sequence to tackle sample jitter, time signals of varying length and recuperation effects of Li-ion batteries.
 
+## :question: Never heard of Mamba Selective State Space models?
+Here we provide free access to Sascha's series: **Towards Mamba State Space Models Images, Videos and Time Series**.
+- [Part 1: Towards Mamba State Space Models for Images, Videos and Time Series](https://medium.com/towards-data-science/towards-mamba-state-space-models-for-images-videos-and-time-series-1e0bfdb5933a?sk=8aaecd0fc979e1e95ac2a8e62946064b)
+- [Part 2: Structured State Space Models Visually Explained](https://medium.com/towards-data-science/structured-state-space-models-visually-explained-86cfe2757386?sk=479768bd75ecf8d410f902b7ad8c0836)
+- [Part 3: Here Comes Mamba: The Selective State Space Model](https://medium.com/towards-data-science/here-comes-mamba-the-selective-state-space-model-435e5d17a451?sk=602b692eda48c19b2b2f4b0a7198bbcb)
+- [Part 4: Vision Mamba: Like a Vision Transformer but Better](https://medium.com/towards-data-science/vision-mamba-like-a-vision-transformer-but-better-3b2660c35848?sk=2a84edececf20d69284ea5b03c058fa9)
+- Part 5: VideoMamba
+- Part 6: MAmbaMixer
+- Part 7: Mamba-2
+
+And here [free access to all his other articles](https://sascha-kirch.github.io/blog_friend_links.html)
+
 ## :fire: News
 - **`2024/11/04`**: Code is available Now!
 - **`2024/11/04`**: We release our [pre-print](https://arxiv.org/abs/2411.00233) on arxiv.
