@@ -3,7 +3,7 @@
 **Authors:** <br>
 [Sascha Kirch](https://sascha-kirch.github.io/), [José Ignacio Olalde-Verano](https://orcid.org/0000-0001-8058-156X) , [Sergio Martín](https://orcid.org/0000-0002-4118-0234) & [Clara Pérez-Molina](https://orcid.org/0000-0001-8260-4155)
 
-[![arXiv](https://img.shields.io/badge/arXiv-2411.00233-b31b1b.svg)](https://arxiv.org/abs/2411.00233) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/sambamixer-state-of-health-prediction-of-li/li-ion-state-of-health-estimation-on-nasa-li)](https://paperswithcode.com/sota/li-ion-state-of-health-estimation-on-nasa-li?p=sambamixer-state-of-health-prediction-of-li) 
+[![](https://img.shields.io/badge/IEEE_Access-doi:10.1109/ACCESS.2024.3524321-blue)](https://ieeexplore.ieee.org/document/10818656) [![arXiv](https://img.shields.io/badge/arXiv-2411.00233-b31b1b.svg)](https://arxiv.org/abs/2411.00233) [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/sambamixer-state-of-health-prediction-of-li/li-ion-state-of-health-estimation-on-nasa-li)](https://paperswithcode.com/sota/li-ion-state-of-health-estimation-on-nasa-li?p=sambamixer-state-of-health-prediction-of-li) 
 
 [[`BibTex`](#black_nib-citation)]
 
@@ -191,14 +191,16 @@ You can delete the build files of `./third_party_packages/mamba/build` and `./th
 If you find our work helpful for your research, please consider citing the following BibTeX entry.
 
 ```bibtex
-@misc{olalde_kirch_2024_sambamixer,
-      title={SambaMixer: State of Health Prediction of Li-ion Batteries using Mamba State Space Models},
-      author={José Ignacio Olalde-Verano and Sascha Kirch and Clara Pérez-Molina and Sergio Martin},
-      year={2024},
-      eprint={2411.00233},
-      archivePrefix={arXiv},
-      primaryClass={cs.LG},
-      url={https://arxiv.org/abs/2411.00233},
-}
+@ARTICLE{olalde_kirch_sambamixer_2025,
+  author={Olalde-Verano, José Ignacio and Kirch, Sascha and Pérez-Molina, Clara and Martín, Sergio},
+  journal={IEEE Access}, 
+  title={SambaMixer: State of Health Prediction of Li-Ion Batteries Using Mamba State Space Models}, 
+  year={2025},
+  volume={13},
+  number={},
+  pages={2313-2327},
+  keywords={Lithium-ion batteries;Predictive models;Transformers;Temperature measurement;Discharges (electric);Voltage measurement;Lithium;Battery charge measurement;State of charge;NASA;Li-ion battery;mamba;state space model;state of health prediction;multivariate time series;deep learning},
+  doi={10.1109/ACCESS.2024.3524321}}
+
 
 ```
