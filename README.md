@@ -27,6 +27,7 @@ Here we provide free access to Sascha's series: **Towards Mamba State Space Mode
 And here [free access to all his other articles](https://sascha-kirch.github.io/blog_friend_links.html)
 
 ## :fire: News
+- **`2025/01/07`**: Our Paper got published in [IEEE Access](https://ieeexplore.ieee.org/document/10818656).
 - **`2024/11/04`**: Code is available Now!
 - **`2024/11/04`**: We release our [pre-print](https://arxiv.org/abs/2411.00233) on arxiv.
 
